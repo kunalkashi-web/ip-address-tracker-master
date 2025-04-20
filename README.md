@@ -8,7 +8,7 @@
 
 #### You can checkout the live version here:
 
-#### [Live Preview](https://quiz-web-app-master.vercel.app/)
+#### [Live Preview](https://ip-address-tracker-master-lime.vercel.app/)
 
 #Teck Stack
 - HTML
