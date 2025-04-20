@@ -1,0 +1,133 @@
+body {
+  display: grid;
+  grid-template-rows: 35% 65%;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  min-height: 100vh;
+}
+
+.bg-image {
+  grid-row: 1;
+  grid-column: 1;
+  background-image: url(/images/pattern-bg-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 1;
+}
+
+#map {
+  z-index: 1;
+}
+
+main {
+  grid-column: 1;
+  grid-row: 1;
+  padding: 20px;
+  z-index: 2;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+h2 {
+  margin-bottom: 8px;
+}
+
+span {
+  font-size: 0.9rem;
+  color: hsl(0, 0%, 17%);
+}
+
+.search-bar {
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+  margin: 20px 0px 15px 0px;
+}
+
+::placeholder {
+  color: hsl(0, 0%, 73%);
+}
+
+.ip-input {
+  width: 100%;
+  padding: 0px 20px;
+  border-radius: 0.8rem 0 0 0.8rem;
+  border-style: none;
+  font-weight: 700;
+}
+
+.submit-button {
+  width: 50px;
+  background-image: url(/images/icon-arrow.svg);
+  background-repeat: no-repeat;
+  border-radius: 0 0.8rem 0.8rem 0;
+  background-position: 16px;
+  background-size: 8px;
+  background-color: black;
+  border-style: none;
+}
+
+ul {
+  display: grid;
+  gap: 0.5rem;
+  border-radius: 0.8rem;
+  background-color: rgb(255, 255, 255);
+  color: hsl(0, 0%, 59%);
+  padding: 20px;
+  font-size: 0.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+span {
+  text-transform: capitalize;
+}
+
+@media (min-width: 450px){
+    li:last-child{
+        grid-row: 1;
+        grid-column: 3;
+    }
+}
+
+@media (min-width: 720px) {
+  .bg-image {
+    background-image: url(/images/pattern-bg-desktop.png);
+  }
+  section {
+    display: flex;
+    align-items: center;
+    flex-grow: 100%;
+    flex-shrink: 0px;
+  }
+
+  .search-bar {
+    width: 40%;
+    margin-bottom: 2.5rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    padding: 60px 30px;
+    font-size: 0.6rem;
+  }
+
+  span {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+}
